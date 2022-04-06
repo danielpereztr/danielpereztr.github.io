@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "(R Code & Data) Optimal sequential strategy to improve the precision of the estimators in a discrete choice experiment: a simulation study"
+comments: false
+tag: [DCE]
+author: dani
+---
+
+### R code to replicate the simulations
+> Constant simulations: [Download][1]
+{: .prompt-tip }
+
+> Non-constant simulations: [Download][2]
+{: .prompt-tip }
+
+### Results
+> Excel file with the results: [Download][3]
+{: .prompt-info }
+ 
+
+[1]:{{ danielpereztr.github.io }}/download/constant_simulations.R
+[2]:{{ danielpereztr.github.io }}/download/non_constant_simulations.R
+[3]:{{ danielpereztr.github.io }}/download/Results.xlsx
