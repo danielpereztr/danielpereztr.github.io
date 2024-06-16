@@ -1,7 +1,6 @@
 ---
-title: Curriculum Vitae
-icon: fas fa-graduation-cap
-order: 2
+title: Stuff
+icon: fas fa-gear
 ---
 
 [Español](#cv-en-español) - [English](#cv-in-english)
