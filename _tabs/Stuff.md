@@ -1,6 +1,6 @@
 ---
 title: Stuff
-icon: fa-gear
+icon: fas fa-cog
 ---
 
 [Español](#cv-en-español) - [English](#cv-in-english)
