@@ -11,5 +11,13 @@ icon: fas fa-cog
   </ul>
 </details>
 
+<details>
+  <summary><strong>R Shiny template</strong></summary>
+  <ul>
+    <p>Simple and user-friendly R Shiny user interface, empty to use as a skeleton for a new project.</p>
+    <li><a href="https://github.com/danielpereztr/danielpereztr.github.io/blob/f27e731e41014fe86491ea91d055abecff908836/download/shiny_interface.R">Link</a></li>
+  </ul>
+</details>
+
 
 ---
