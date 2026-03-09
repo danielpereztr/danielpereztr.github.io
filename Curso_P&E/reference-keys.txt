@@ -1,0 +1,9 @@
+prerrequisitos
+cpyd
+cargando-datos
+echando-un-vistazo-a-nuestros-datos
+manipulando_datos
+representacion_datos_barras
+consejo-1
+representacion_datos_histograma
+representación-de-gráficos-de-líneas
