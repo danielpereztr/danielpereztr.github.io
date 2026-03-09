@@ -12,7 +12,7 @@
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Este libro contiene los materiales que serán unsados durante el curso para aprender R" />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  <meta name="github-repo" content="danielpereztr/danielpereztr.github.io" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 4 Representación de datos en gráficos de barras | Introducción a R para la asignatura Probabilidad &amp; Estadística" />
@@ -138,7 +138,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">A Introducción a R para la asignatura Probabilidad & Estadística</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a></li>
@@ -155,7 +155,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5" data-path="representacion_datos_histograma.html"><a href="representacion_datos_histograma.html"><i class="fa fa-check"></i><b>5</b> Representación de histogramas</a></li>
 <li class="chapter" data-level="6" data-path="representación-de-gráficos-de-líneas.html"><a href="representación-de-gráficos-de-líneas.html"><i class="fa fa-check"></i><b>6</b> Representación de gráficos de líneas</a></li>
 <li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://danielpereztr.github.io/Curso_P&E/index.html" target="blank">Published with bookdown</a></li>
 
 </ul>
 
@@ -191,10 +191,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="representacion_datos_barras.html#cb26-1" tabindex="-1"></a><span class="co"># Vamos a guardar este gráfico en el objeto &#39;grafico&#39;</span></span>
 <span id="cb26-2"><a href="representacion_datos_barras.html#cb26-2" tabindex="-1"></a>grafico_econ <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(datos_econ, <span class="fu">aes</span>(<span class="at">x =</span> pais, <span class="at">y =</span> pib)) <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>)</span>
 <span id="cb26-3"><a href="representacion_datos_barras.html#cb26-3" tabindex="-1"></a>grafico_econ</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-59-1.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-9-1.png" alt="" width="672" /></p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="representacion_datos_barras.html#cb27-1" tabindex="-1"></a>grafico_mkt <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(datos_mkt, <span class="fu">aes</span>(<span class="at">x =</span> civil)) <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;count&quot;</span>)</span>
 <span id="cb27-2"><a href="representacion_datos_barras.html#cb27-2" tabindex="-1"></a>grafico_mkt</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-59-2.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-9-2.png" alt="" width="672" /></p>
 <p>Ahora tenemos un gráfico de barras, pero necesitamos varias cosas:
 1. Poner cada barra en un color
 2. Girar las etiquetas de los nombres para que puedan leerse bien en grafico_econ
@@ -203,15 +203,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="representacion_datos_barras.html#cb28-1" tabindex="-1"></a>grafico_econ <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(datos_econ, <span class="fu">aes</span>(<span class="at">x =</span> pais, <span class="at">y =</span> pib, <span class="at">fill =</span> pais)) <span class="sc">+</span> </span>
 <span id="cb28-2"><a href="representacion_datos_barras.html#cb28-2" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">show.legend =</span> F)</span>
 <span id="cb28-3"><a href="representacion_datos_barras.html#cb28-3" tabindex="-1"></a>grafico_econ</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-60-1.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-10-1.png" alt="" width="672" /></p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="representacion_datos_barras.html#cb29-1" tabindex="-1"></a>grafico_mkt <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(datos_mkt, <span class="fu">aes</span>(<span class="at">x =</span> civil, <span class="at">fill =</span> civil)) <span class="sc">+</span> </span>
 <span id="cb29-2"><a href="representacion_datos_barras.html#cb29-2" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;count&quot;</span>, <span class="at">show.legend =</span> F)</span>
 <span id="cb29-3"><a href="representacion_datos_barras.html#cb29-3" tabindex="-1"></a>grafico_mkt</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-60-2.png" alt="" width="672" />
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-10-2.png" alt="" width="672" />
 Posteriormente, podemos sumar la función <code>theme</code> al gráfico para girar las etiquetas de los países:</p>
 <div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="representacion_datos_barras.html#cb30-1" tabindex="-1"></a>grafico_econ <span class="ot">&lt;-</span> grafico_econ <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span>
 <span id="cb30-2"><a href="representacion_datos_barras.html#cb30-2" tabindex="-1"></a>grafico_econ</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-61-1.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-11-1.png" alt="" width="672" /></p>
 <p>En <code>datos_mkt</code> debemos cambiar las etiquetas de <code>civil</code>si queremos que en el gráfico aparezcan las tres opciones bien etiquetadas (necesitamos modificar los valores de la variable en la base de datos):</p>
 <div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="representacion_datos_barras.html#cb31-1" tabindex="-1"></a>datos_mkt<span class="sc">$</span>civil <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(datos_mkt<span class="sc">$</span>civil <span class="sc">==</span> <span class="st">&quot;married&quot;</span>, <span class="st">&quot;Casado/a&quot;</span>, datos_mkt<span class="sc">$</span>civil)</span>
 <span id="cb31-2"><a href="representacion_datos_barras.html#cb31-2" tabindex="-1"></a>datos_mkt<span class="sc">$</span>civil <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(datos_mkt<span class="sc">$</span>civil <span class="sc">==</span> <span class="st">&quot;single&quot;</span>, <span class="st">&quot;Soltero/a&quot;</span>, datos_mkt<span class="sc">$</span>civil)</span>
@@ -219,14 +219,14 @@ Posteriormente, podemos sumar la función <code>theme</code> al gráfico para gi
 <span id="cb31-4"><a href="representacion_datos_barras.html#cb31-4" tabindex="-1"></a>grafico_mkt <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(datos_mkt, <span class="fu">aes</span>(<span class="at">x =</span> civil, <span class="at">fill =</span> civil)) <span class="sc">+</span> </span>
 <span id="cb31-5"><a href="representacion_datos_barras.html#cb31-5" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;count&quot;</span>, <span class="at">show.legend =</span> F)</span>
 <span id="cb31-6"><a href="representacion_datos_barras.html#cb31-6" tabindex="-1"></a>grafico_mkt</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-62-1.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-12-1.png" alt="" width="672" /></p>
 <p>Finalmente, con <code>labs()</code> podemos cambiar las etiquetas de los ejes:</p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="representacion_datos_barras.html#cb32-1" tabindex="-1"></a>grafico_econ <span class="ot">&lt;-</span> grafico_econ <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Países&quot;</span>, <span class="at">y =</span> <span class="st">&quot;PIB (Millones de €)&quot;</span>)</span>
 <span id="cb32-2"><a href="representacion_datos_barras.html#cb32-2" tabindex="-1"></a>grafico_econ</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-63-1.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-13-1.png" alt="" width="672" /></p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="representacion_datos_barras.html#cb33-1" tabindex="-1"></a>grafico_mkt <span class="ot">&lt;-</span> grafico_mkt <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Estado civil&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Recuento&quot;</span>)</span>
 <span id="cb33-2"><a href="representacion_datos_barras.html#cb33-2" tabindex="-1"></a>grafico_mkt</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-63-2.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-13-2.png" alt="" width="672" /></p>
 
 </div>
 </div>

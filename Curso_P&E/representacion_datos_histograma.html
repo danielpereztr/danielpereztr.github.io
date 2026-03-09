@@ -12,7 +12,7 @@
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Este libro contiene los materiales que serán unsados durante el curso para aprender R" />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  <meta name="github-repo" content="danielpereztr/danielpereztr.github.io" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 5 Representación de histogramas | Introducción a R para la asignatura Probabilidad &amp; Estadística" />
@@ -138,7 +138,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">A Introducción a R para la asignatura Probabilidad & Estadística</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a></li>
@@ -155,7 +155,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5" data-path="representacion_datos_histograma.html"><a href="representacion_datos_histograma.html"><i class="fa fa-check"></i><b>5</b> Representación de histogramas</a></li>
 <li class="chapter" data-level="6" data-path="representación-de-gráficos-de-líneas.html"><a href="representación-de-gráficos-de-líneas.html"><i class="fa fa-check"></i><b>6</b> Representación de gráficos de líneas</a></li>
 <li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://danielpereztr.github.io/Curso_P&E/index.html" target="blank">Published with bookdown</a></li>
 
 </ul>
 
@@ -180,18 +180,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="representacion_datos_histograma.html#cb34-1" tabindex="-1"></a>histograma_econ <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(datos_econ, <span class="fu">aes</span>(<span class="at">x =</span> pib)) <span class="sc">+</span> <span class="fu">geom_histogram</span>()</span>
 <span id="cb34-2"><a href="representacion_datos_histograma.html#cb34-2" tabindex="-1"></a>histograma_econ</span></code></pre></div>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value `binwidth`.</code></pre>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-64-1.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-14-1.png" alt="" width="672" /></p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="representacion_datos_histograma.html#cb36-1" tabindex="-1"></a>histograma_mkt <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(datos_mkt, <span class="fu">aes</span>(<span class="at">x =</span> edad)) <span class="sc">+</span> <span class="fu">geom_histogram</span>()</span>
 <span id="cb36-2"><a href="representacion_datos_histograma.html#cb36-2" tabindex="-1"></a>histograma_mkt</span></code></pre></div>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value `binwidth`.</code></pre>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-64-2.png" alt="" width="672" />
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-14-2.png" alt="" width="672" />
 La anchura de las barras que forman el histograma pueden ajustarse, y los títulos de los ejes se pueden cambiar de la misma forma que en el ejemplo anterior. Además, podemos darle color.</p>
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="representacion_datos_histograma.html#cb38-1" tabindex="-1"></a>histograma_econ <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(datos_econ, <span class="fu">aes</span>(<span class="at">x =</span> pib)) <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">300000</span>, <span class="at">fill =</span> <span class="st">&quot;blue&quot;</span>)</span>
 <span id="cb38-2"><a href="representacion_datos_histograma.html#cb38-2" tabindex="-1"></a>histograma_econ</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-65-1.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-15-1.png" alt="" width="672" /></p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="representacion_datos_histograma.html#cb39-1" tabindex="-1"></a>histograma_mkt <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(datos_mkt, <span class="fu">aes</span>(<span class="at">x =</span> edad)) <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">2</span>, <span class="at">fill =</span> <span class="st">&quot;red&quot;</span>)</span>
 <span id="cb39-2"><a href="representacion_datos_histograma.html#cb39-2" tabindex="-1"></a>histograma_mkt</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-65-2.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-15-2.png" alt="" width="672" /></p>
 <p>Si queremos una paleta de colores más profesional, podemos usar el paquete <code>RColorBrewer</code>:</p>
 <div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="representacion_datos_histograma.html#cb40-1" tabindex="-1"></a><span class="co"># install.packages(&quot;RColorBrewer&quot;)</span></span>
 <span id="cb40-2"><a href="representacion_datos_histograma.html#cb40-2" tabindex="-1"></a><span class="fu">library</span>(RColorBrewer)</span>
@@ -201,16 +201,16 @@ La anchura de las barras que forman el histograma pueden ajustarse, y los títul
 <span id="cb41-2"><a href="representacion_datos_histograma.html#cb41-2" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">300000</span>, <span class="at">fill =</span> <span class="fu">brewer.pal</span>(<span class="dv">5</span>, <span class="st">&quot;Blues&quot;</span>)[<span class="dv">3</span>])</span>
 <span id="cb41-3"><a href="representacion_datos_histograma.html#cb41-3" tabindex="-1"></a><span class="co"># brewer.pal(n, name): n es el número de colores en la paleta y name es el nombre de la paleta, que puede consultarse en https://r-graph-gallery.com/38-rcolorbrewers-palettes.html. El [] posterior extrae el tercer color de la paleta. </span></span>
 <span id="cb41-4"><a href="representacion_datos_histograma.html#cb41-4" tabindex="-1"></a>histograma_econ</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-67-1.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-17-1.png" alt="" width="672" /></p>
 <div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="representacion_datos_histograma.html#cb42-1" tabindex="-1"></a>histograma_mkt <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(datos_mkt, <span class="fu">aes</span>(<span class="at">x =</span> edad)) <span class="sc">+</span> </span>
 <span id="cb42-2"><a href="representacion_datos_histograma.html#cb42-2" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">2</span>, <span class="at">fill =</span> <span class="fu">brewer.pal</span>(<span class="dv">5</span>, <span class="st">&quot;Reds&quot;</span>)[<span class="dv">2</span>])</span>
 <span id="cb42-3"><a href="representacion_datos_histograma.html#cb42-3" tabindex="-1"></a><span class="co"># brewer.pal(n, name): n es el número de colores en la paleta y name es el nombre de la paleta, que puede consultarse en https://r-graph-gallery.com/38-rcolorbrewers-palettes.html. El [] posterior extrae el tercer color de la paleta. </span></span>
 <span id="cb42-4"><a href="representacion_datos_histograma.html#cb42-4" tabindex="-1"></a>histograma_mkt</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-67-2.png" alt="" width="672" />
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-17-2.png" alt="" width="672" />
 Podemos incluso superponer dos histogramas para observar si la distribución de la edad difiere entre el estado civil en <code>datos_mkt</code>.</p>
 <div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="representacion_datos_histograma.html#cb43-1" tabindex="-1"></a><span class="fu">ggplot</span>(datos_mkt, <span class="fu">aes</span>(<span class="at">x =</span> edad, <span class="at">fill =</span> civil)) <span class="sc">+</span></span>
 <span id="cb43-2"><a href="representacion_datos_histograma.html#cb43-2" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">position =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">binwidth =</span> <span class="dv">3</span>)</span></code></pre></div>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-68-1.png" alt="" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-18-1.png" alt="" width="672" /></p>
 
 </div>
             </section>
