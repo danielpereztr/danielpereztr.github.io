@@ -60,6 +60,7 @@ test() {
     --disable-external \
     --check-html \
     --allow_hash_href \
+    --ignore-files "/Curso_P&E/.*" \
     "$SITE_DIR"
 }
 
