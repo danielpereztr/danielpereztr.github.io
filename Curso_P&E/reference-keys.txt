@@ -1,3 +1,4 @@
+tab:unnamed-chunk-22
 prerrequisitos
 cpyd
 cargando-datos
@@ -7,3 +8,14 @@ representacion_datos_barras
 consejo-1
 representacion_datos_histograma
 representación-de-gráficos-de-líneas
+práctica-ud2---estadística-descriptiva
+contexto
+cargamos-los-datos-y-hacemos-una-descripción-inicial-de-las-variables
+cuál-fue-la-media-de-facturación-del-sector-en-el-año-2025
+representa-la-media-bien-la-realidad-del-sector
+cuál-es-la-media-de-trabajadores-de-las-empresas-del-sector
+usando-la-clasificación-de-microempresa-pequeña-empresa-mediana-empresa-y-gran-empresa-qué-frecuencia-tiene-cada-una-en-el-sector-cuál-es-la-moda
+cómo-de-grandes-son-las-diferencias-en-capital-social-entre-las-empresas
+en-qué-percentil-de-ingresos-se-encuentra-a-se-corresponde-con-el-percentil-de-capital-social
+hay-diferencias-en-ingresos-según-el-tipo-de-sociedad-de-las-empresas-cuál-es-el-tipo-de-sociedad-que-ingresa-más
+existe-correlación-entre-los-ingresos-y-el-número-de-trabajadores-cómo-es-esa-correlación
