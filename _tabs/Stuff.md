@@ -23,7 +23,7 @@ icon: fas fa-cog
   <summary><strong>Materiales P&E</strong></summary>
   <ul>
     <p>Materiales didácticos para la asignatura Probabilidad y Estadística del grado en Economía Digital y Marketing Digital de la UTAMED</p>
-    <li>danielpereztr.github.io/Curso_P&E</li>
+    <li>danielpereztr.github.io/Curso_P&E/</li>
   </ul>
 </details>
 

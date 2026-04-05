@@ -23,7 +23,7 @@
 <meta name="author" content="Daniel Pérez Troncoso" />
 
 
-<meta name="date" content="2026-04-03" />
+<meta name="date" content="2026-04-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -229,14 +229,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 6 Estonia               39848.</code></pre>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="cpyd.html#cb8-1" tabindex="-1"></a><span class="fu">head</span>(datos_mkt)</span></code></pre></div>
 <pre><code>## # A tibble: 6 × 17
-##     age job         marital education default balance housing loan  contact    day month duration campaign pdays previous poutcome y    
-##   &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;
-## 1    30 unemployed  married primary   no         1787 no      no    cellular    19 oct         79        1    -1        0 unknown  no   
-## 2    33 services    married secondary no         4789 yes     yes   cellular    11 may        220        1   339        4 failure  no   
-## 3    35 management  single  tertiary  no         1350 yes     no    cellular    16 apr        185        1   330        1 failure  no   
-## 4    30 management  married tertiary  no         1476 yes     yes   unknown      3 jun        199        4    -1        0 unknown  no   
-## 5    59 blue-collar married secondary no            0 yes     no    unknown      5 may        226        1    -1        0 unknown  no   
-## 6    35 management  single  tertiary  no          747 no      no    cellular    23 feb        141        2   176        3 failure  no</code></pre>
+##     age job       marital education default balance housing loan  contact   day month duration campaign pdays previous poutcome
+##   &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;   
+## 1    30 unemploy… married primary   no         1787 no      no    cellul…    19 oct         79        1    -1        0 unknown 
+## 2    33 services  married secondary no         4789 yes     yes   cellul…    11 may        220        1   339        4 failure 
+## 3    35 manageme… single  tertiary  no         1350 yes     no    cellul…    16 apr        185        1   330        1 failure 
+## 4    30 manageme… married tertiary  no         1476 yes     yes   unknown     3 jun        199        4    -1        0 unknown 
+## 5    59 blue-col… married secondary no            0 yes     no    unknown     5 may        226        1    -1        0 unknown 
+## 6    35 manageme… single  tertiary  no          747 no      no    cellul…    23 feb        141        2   176        3 failure 
+## # ℹ 1 more variable: y &lt;chr&gt;</code></pre>
 
 </div>
 </div>
