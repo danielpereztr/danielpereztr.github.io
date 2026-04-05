@@ -1,0 +1,88 @@
+---
+layout: post
+title:  "Un atlas pensado para quienes necesitan modelizar costes sanitarios"
+comments: false
+tag: [Recursos]
+author: 
+    name: false
+    link: false
+toc: false
+categories: [Recursos]
+---
+# Un atlas pensado para quienes necesitan modelizar costes sanitarios
+
+Una parte importante de los modelos económicos en salud depende de algo aparentemente sencillo: poner un coste razonable a los profesionales sanitarios.
+
+En la práctica, no siempre lo es.
+
+Para actividad hospitalaria, utilización de recursos o casuística clínica existen fuentes bastante conocidas y estructuradas. Ahí están, por ejemplo, sistemas como el **CMBD** o bases de datos ampliamente utilizadas en investigación y gestión. Pero cuando lo que uno necesita es una referencia salarial pública y trazable para médicos, enfermeras, fisioterapeutas, TCAE o celadores, el panorama cambia bastante.
+
+No existe una base nacional clara, homogénea y fácilmente reutilizable para este tipo de costes salariales del personal sanitario público.
+
+Y eso obliga muchas veces a trabajar de una forma poco eficiente:
+
+- buscar documentos autonómicos uno a uno
+- localizar tablas retributivas entre anexos largos y heterogéneos
+- interpretar categorías no siempre equivalentes
+- decidir qué parte es fija, qué parte es variable y qué puede compararse de verdad
+
+Ese vacío es, en realidad, el origen del **Atlas retributivo sanitario**.
+
+## Por qué nace esta herramienta
+
+La herramienta no surge principalmente para que un profesional consulte cuánto cobra, aunque también pueda servir para eso.
+
+Surge sobre todo desde una necesidad mucho más concreta: la de quienes trabajamos con **modelos económicos, evaluaciones económicas, análisis de costes o planificación sanitaria** y necesitamos una base razonable para valorar recursos humanos con algo más de consistencia.
+
+Cuando uno intenta construir un modelo serio, enseguida aparece el mismo problema: los datos salariales existen, pero están dispersos, publicados de forma distinta según la comunidad autónoma y rara vez preparados para comparación territorial.
+
+Por eso el objetivo del atlas ha sido muy específico:
+
+- reunir fuentes oficiales de las comunidades autónomas
+- armonizar categorías profesionales comparables
+- separar, cuando ha sido posible, los componentes salariales
+- construir una referencia anual usable para comparación
+- mantener siempre la trazabilidad documental
+
+No se trata de inventar una cifra media “bonita”, sino de ofrecer una base más útil para trabajar.
+
+## Lo que aporta
+
+Creo que el valor del atlas está menos en la visualización y más en el tipo de problema que intenta resolver.
+
+Lo relevante no es solo poder ver un mapa o un ranking. Lo relevante es disponer de una herramienta que ayude a responder preguntas como estas:
+
+- qué coste salarial de referencia usar para un médico especialista en una comunidad concreta
+- cómo cambia la referencia entre territorios
+- qué parte de la retribución está realmente documentada como fija
+- cuándo una cuantía incorpora elementos variables que conviene tratar con cautela en un modelo
+
+En ese sentido, el atlas intenta situarse en un punto intermedio entre el PDF original y la simplificación excesiva.
+
+## Una herramienta para trabajar mejor, no para fingir precisión
+
+Al construir este tipo de base, la tentación más fácil sería rellenar huecos y forzar comparaciones perfectas.
+
+He preferido no hacerlo.
+
+Cuando una fuente permite reconstruir una referencia comparable, se hace. Cuando no, se documenta el límite. Y cuando un componente depende de factores no observables de forma homogénea, lo razonable es no esconder esa incertidumbre.
+
+Eso hace la herramienta menos cerrada de lo que sería una tabla “bonita”, pero bastante más útil para quien necesita trabajar con cuidado metodológico.
+
+## Una nota importante
+
+El proceso de extracción y estructuración se ha realizado con ayuda de IA, bajo supervisión humana. Aun así, por el volumen de datos y la heterogeneidad de las fuentes, es posible que haya errores o decisiones discutibles en algunos casos.
+
+Precisamente por eso la herramienta intenta ser trazable: para que cada observación pueda revisarse, discutirse y, si hace falta, corregirse.
+
+## En el fondo, va de esto
+
+Va de intentar cubrir un hueco bastante concreto.
+
+Tenemos buenas fuentes para muchas cosas en sanidad, pero seguimos sin tener una base clara, pública y fácilmente reutilizable para **costes salariales del personal sanitario** con vocación comparativa.
+
+El atlas no resuelve por completo ese problema, pero sí intenta hacerlo un poco más manejable.
+
+Si trabajas con modelos, análisis de costes o evaluación económica, probablemente entiendas enseguida por qué hacía falta una herramienta así.
+
+[https://atlasretributivosanitario.github.io/](https://atlasretributivosanitario.github.io/)
